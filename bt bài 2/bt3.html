@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+
+        <fieldset>
+            <legend>Registration information</legend>
+            <label for="first name">first name</label>
+            <input type="text" placeholder="enter your first name"><label for="last name">Last name</label>
+            <input type="text" placeholder="enter your last name"><br>
+            <label for="email">email</label><input type="email" placeholder="enter your email">
+            <label for="phone">phone</label><input type="phone" placeholder="enter your phone"><br>
+            <label for="password">password</label><input type="password" placeholder="enter your password"><label
+                for="confirm password">confirm password</label><input type="text" placeholder="enter your password again">
+
+        </fieldset>
+        <fieldset>
+            <legend>personal information</legend>
+            <label for="gender">gender:</label><input type="radio" name="gender" value="male" checked>
+            <label>male</label>
+            <input type="radio" name="gender" value="male"><label>female</label><label>hobbies:</label><input
+                type="checkbox"><label>music</label><input type="checkbox"><label>sports</label><input
+                type="checkbox"><label>travel</label><input type="checkbox"><label>movies</label>
+            <br><label>source of income</label><select name="" id="">
+                <option value="employed">employed</option>
+                <option value="ployed">ployed</option>
+
+            </select>
+            <label for="">income:</label><input type="range" min="10" max="1"><br>
+            <label for="">age:</label><input type="text" value="18"> <label for="">profile picture:</label><input
+                type="file" value="choose file"><br>
+            <label for="">birthday:</label><input type="date"><label for="">address</label><input type="text">
+            <br><label for="">bio:</label><textarea name="" id="" cols="40" rows="3"></textarea>
+        </fieldset>
+        <button>create</button><input type="reset" value="reset">
+    </form>
+</body>
+</html>
