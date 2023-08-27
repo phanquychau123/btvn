@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    .menu {
+        background-color: #faebd7;
+        width:300px ;
+        
+
+        display: flex;
+        align-items: start;
+
+    }
+
+    li {
+border: 1px solid #faebd7 ;
+margin: 10px; 
+padding: 10px;
+background-color:#4CAF50;
+width: 290px; ;
+
+
+        list-style: none;
+        
+    }
+.l.menu:hover{
+    cursor: pointer;
+    color: red;
+}
+    a {
+        text-decoration: none;
+    }
+    header{
+       position: relative;
+       top: 20px;
+       left: 20px;
+    }
+  
+</style>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>menu doc ben trai</h1>
+            <p>day la noi dung chinh cua trang web</p>
+        </header>
+        <div class="menu">
+            <ul>
+                <li><a href="#">trang chu</a></li>
+                <li><a href="#">tin tuc</a></li>
+                <li><a href="#">lien he</a></li>
+                <li><a href="#">ve chung toi</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

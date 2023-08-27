@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 1200px;
+            height: auto;
+            text-align: center;
+        }
+.header{
+    color: white;
+    display: flex;
+    background-color: black;
+}
+.h2{
+    display:inline-flex ;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 30px;
+
+}
+.input{
+    width: 300px;
+}
+/* h2{
+    cursor: pointer;
+    display: block;
+    margin: 0 10px;
+} */
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="h1">
+                <h1>Hotel Seach</h1>
+            </div>
+            <div class="h2">
+                <h2>Home</h2>
+                <h2>About</h2>
+                <h2>Contact</h2>
+            </div>
+
+        </div>
+        <p style="text-align: center; font-style: italic; font-size: larger;">Lorem ipsum dolor sit amet consectetur.</p>
+        <div class="form">
+            <form action="">
+                <label for="destination">Destination:</label><br>
+                <input  class="input" type="text" name="destination" placeholder="Enter a city or town"><br>
+                <label for="Check in">Check in:</label><br>
+                <input  class="input" type="date" name="Check in"><br>
+                <label for="Check out">Check out:</label><br>
+                <input  class="input" type="date" name="Check out"><br>
+                <label for="guests">guests:</label><br>
+                <select class="input" name="guests" id="guests">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <br>
+                <input style="background-color: black; color: aliceblue;" type="submit" value="Seach">
+            </form>
+        </div>
+        
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    background-color: aliceblue;
+    
+
+}
+header{
+    background-color:black;
+    color: aliceblue;
+  height: 60px;
+  text-align: center;
+}
+main{
+    text-align: center;
+    margin: 30px;
+    font-size: large;
+
+}
+.container-item{
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+    
+}
+.container-item2{
+    text-align: center;
+    margin: 10px;
+}
