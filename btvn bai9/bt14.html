@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let string = prompt('nhap vao cau bat ki:');
+        let arr = string.split("");
+        let result = '';
+        for (let index = 0; index < arr.length; index++) {
+            if (arr[index] === arr[index].toUpperCase()) {
+                result += arr[index].toLowerCase();
+            }
+            if (arr[index] === arr[index].toLowerCase()) {
+                result += arr[index].toUpperCase();
+            }
+        }
+        console.log(result);
+    </script>
+</body>
+
+</html>

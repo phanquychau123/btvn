@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let soluongphantu = +prompt("nhap so luong");
+        let n1 = 0;
+        let n2 = 1;
+        let nextFibonaci;
+
+        for (let i = 2; i <= soluongphantu; i++) {
+            console.log(n1);
+            nextFibonaci = n1 + n2;
+            n1 = n2;
+            n2 = nextFibonaci;
+        }
+    </script>
+</body>
+
+</html>

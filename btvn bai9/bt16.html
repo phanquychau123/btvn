@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let inPut = prompt(`nhap day  so vao day`);
+        let arr = inPut.split("");
+        let arrNew = [];
+        for (let i = 0; i < arr.length; i++) {
+            if (!arrNew.includes(arr[i])) {
+                arrNew.push(arr[i]);
+            }
+        }
+        console.log(arrNew.join(""));
+    </script>
+</body>
+
+</html>

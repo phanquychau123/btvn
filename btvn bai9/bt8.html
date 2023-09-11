@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let mangSoNguyen = [];
+        let soLuongPhanTu = 5;
+        for (let i = 0; i < soLuongPhanTu; i++) {
+            let inPut = 0;
+            do {
+                inPut = prompt(`nhap so nguyen thu ${i + 1}`);
+                var intValue = parseInt(inPut);
+                if (isNaN(intValue)) {
+                    alert("hay nhap mang so nguyen");
+                }
+            } while (isNaN(intValue))
+            mangSoNguyen.push(intValue);
+        }
+
+        console.log(`mang sau khi nhap la: ${mangSoNguyen}`);
+        var maxValue = mangSoNguyen[0];
+
+        var sum = 0;
+        for (let i = 0; i < mangSoNguyen.length; i++) {
+            if (mangSoNguyen[i] > maxValue) {
+                maxValue = mangSoNguyen[i];
+            }
+        }
+        console.log(`gia tri lon nhat la:${maxValue}`);
+        for (let i = 0; i < mangSoNguyen.length; i++) {
+            sum += mangSoNguyen[i];
+        }
+        var giaTriTrungBinh = sum / soLuongPhanTu;
+
+        console.log(`gia tri trung binh la ${giaTriTrungBinh}`);
+    </script>
+</body>
+
+</html>

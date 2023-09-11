@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let string = prompt('nhap vao cau bat ki:');
+        let arrName = string.split("");
+        let result = true;
+        for (let index = 0; index < (arrName.length -1) / 2; index++) {
+            if (arrName[index] !== arrName[arrName.length - index - 1]) {
+                result = false
+                break;
+            }
+
+        }
+        if (result == true) {
+            console.log("chuoi la chuoi doi xung");
+        } else {
+            console.log("chuoi khong phai la chuoi doi xung");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let inputText = prompt("Nhập vào đoạn văn bản: ");
+        let words = inputText.split(" ");
+        for (let i = 0; i < words.length; i++) {
+            words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+        }
+        let outputText = words.join(" ");
+        console.log("Chuỗi mới viết hoa chữ cái đầu: " + outputText);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = +prompt("nhap diem bai kiem tra");
+        let b = +prompt("nhap diem thi giua ki");
+        let c = +prompt("nhap diem thi cuoi ki");
+        let tong = (a + b * 2 + c * 3) / 6;
+        if (tong >= 8) {
+            document.write(`la hs gioi`);
+        } else if (6.5 <= tong && tong < 8) {
+            document.write(`${tong}la hs tien tien`);
+        } else if (5 <= tong && tong < 6.5) {
+            document.write(`${tong}la hs tb`);
+        } else {
+            document.write(`${tong}  la hs yeu`);
+        }
+    </script>
+</body>
+
+</html>

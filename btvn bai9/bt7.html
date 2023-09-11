@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <script>
+            var mangSoNguyen = [];
+            for (var i = 0; i < 10; i++) {
+                var userInput;
+                var isDuplicate;
+
+                do {
+                    userInput = prompt("Nhập giá trị cho phần tử thứ " + (i + 1) + ":");
+                    var intValue = parseInt(userInput);
+                    if (isNaN(intValue)) {
+                        alert("Hãy nhập một số nguyên.");
+                    } else {
+                        isDuplicate = mangSoNguyen.includes(intValue);
+                        if (isDuplicate) {
+                            alert("Giá trị này đã tồn tại trong mảng. Hãy nhập lại.");
+                        }
+                    }
+                } while (isNaN(intValue) || isDuplicate);
+
+                mangSoNguyen.push(intValue);
+            }
+            console.log("Mảng sau khi nhập là:", mangSoNguyen);
+            var maxValue = mangSoNguyen[0];
+            var maxIndex = 0;
+            for (var i = 1; i < mangSoNguyen.length; i++) {
+                if (mangSoNguyen[i] > maxValue) {
+                    maxValue = mangSoNguyen[i];
+                    maxIndex = i;
+                }
+            }
+            console.log(`phan tu lon nhat trong mang la:${maxValue} va vi tri cua no la ${maxIndex}`);
+        </script>
+    </body>
+
+    </html>
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
+</body>
+
+</html>
