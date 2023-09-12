@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function soNhoNhat() {
+            let mangSoNguyen = [];
+            for (let i = 0; i < 3; i++) {
+                let inPut = parseInt(prompt(`nhap so nguyen ${i + 1}`));
+                if (!Number.isNaN(inPut)) {
+                    mangSoNguyen.push(inPut);
+                } else {
+                    alert(`gia tri ban nhap ko phai so nguyen vui long nhap lai`)
+                    i--;
+                }
+            }
+            let giaTriNhoNhat = mangSoNguyen[0];
+            for (let i = 1; i < mangSoNguyen.length; i++) {
+                if (mangSoNguyen[i] < giaTriNhoNhat) {
+                    giaTriNhoNhat = mangSoNguyen[i];
+                }
+                return giaTriNhoNhat
+            }
+        }
+        let ketQua = soNhoNhat();
+        console.log(`so nho nhat la ${ketQua}`);
+    </script>
+</body>
+
+</html>

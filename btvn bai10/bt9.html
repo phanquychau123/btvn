@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function tinhTanSuatChuoi(chuoi) {
+            let tanSuat = {};
+            for (let i = 0; i < chuoi.length; i++) {
+                let kyTu = chuoi[i];
+                if (tanSuat[kyTu]) {
+                    tanSuat[kyTu]++;
+                } else {
+                    tanSuat[kyTu] = 1;
+                }
+            }
+            for (let kyTu in tanSuat) {
+                console.log(`'${kyTu}': ${tanSuat[kyTu]}`);
+            }
+        }
+        let chuoi = prompt("Nhập vào chuỗi ký tự: ");
+        tinhTanSuatChuoi(chuoi);
+
+
+    </script>
+</body>
+
+</html>

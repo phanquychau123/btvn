@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function tinhGiaithua(number) {
+            if (number == 0 || number == 1) {
+                return 1;
+            } else {
+                let giaiThua = 1;
+                for (let i = 1; i <= number; i++) {
+                    giaiThua *= i;
+                }
+                return giaiThua
+            }
+
+        }
+
+        let number = +prompt("nhap so nguyen vao day");
+        let ketQua = tinhGiaithua(number);
+        console.log(ketQua);
+    </script>
+</body>
+
+</html>

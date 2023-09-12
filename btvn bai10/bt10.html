@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function kiemTraNamNhuan(nam) {
+            // Một năm là năm nhuận nếu:
+            // 1. Chia hết cho 4 nhưng không chia hết cho 100
+            // hoặc
+            // 2. Chia hết cho 400
+            if ((nam % 4 === 0 && nam % 100 !== 0) || nam % 400 === 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        let nam = parseInt(prompt("Nhập vào một năm: "));
+        if (kiemTraNamNhuan(nam)) {
+            console.log(`${nam} là năm nhuận.`);
+        } else {
+            console.log(`${nam} không phải là năm nhuận.`);
+        }
+
+    </script>
+</body>
+
+</html>
