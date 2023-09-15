@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+   
+    function tinhSoNguyenTo(a) {
+      if (a <= 1) {
+        return false;
+      } if (a == 2) {
+        return true;
+      } else {
+        for (let i = 2; i < a - 1; i++) {
+          if (a % i == 0) {
+            return false;
+          }
+        }
+      }
+      return true;
+    }
+    let str = prompt(`nhap chuoi so nguyen`);
+    let arr = str.split(" ");
+    let sum = 0;
+    function tinhTong() {
+      for (let j = 0; j < arr.length; j++) {
+        let num = parseInt(arr[j]);
+        if (!isNaN(num) && isPrime(num)) {
+          sum += num;
+        }
+      }
+      return sum;
+    }
+   
+    console.log(`tong cac so nguyen to${sum}`);
+//bai nay em lam lai nhieu cach ma sao no ko ra ket qua thay xem lai gium e nha
+
+  </script>
+</body>
+
+</html>

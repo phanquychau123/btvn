@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let chuoiSo = prompt("Nhập vào một chuỗi số nguyên có 5 chữ số:");
+    let mangSo = chuoiSo.split("");
+    mangSo.sort((a, b) => {
+      return b - a;
+    })
+    let soLonNhatDuyNhat = null;
+    for (let so of mangSo) {
+      if (mangSo.indexOf(so) === mangSo.lastIndexOf(so)) {
+        soLonNhatDuyNhat = so;
+        break;
+      }
+    }
+    if (soLonNhatDuyNhat !== null) {
+      console.log(`Số lớn nhất và duy nhất trong chuỗi là: ${soLonNhatDuyNhat}`);
+    } else {
+      console.log("Không có số lớn nhất và duy nhất trong chuỗi.");
+    }
+
+
+
+  </script>
+</body>
+
+</html>
