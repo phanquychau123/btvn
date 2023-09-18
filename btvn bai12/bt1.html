@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function timChuoiConDaiNhatKhongTrungLap(input) {
+            let chuoiConDaiNhat = "";
+            let chuoiConHienTai = "";
+
+            for (let i = 0; i < input.length; i++) {
+                const kyTuHienTai = input[i];
+                if (chuoiConHienTai.includes(kyTuHienTai)) {
+                    chuoiConHienTai = chuoiConHienTai.slice(chuoiConHienTai.indexOf(kyTuHienTai) + 1);
+                }
+                chuoiConHienTai += kyTuHienTai;
+                if (chuoiConHienTai.length > chuoiConDaiNhat.length) {
+                    chuoiConDaiNhat = chuoiConHienTai;
+                }
+            }
+
+            return chuoiConDaiNhat;
+        }
+        const chuoiNhap = prompt("Nhập chuỗi: ");
+        const chuoiConDaiNhatKhongTrungLap = timChuoiConDaiNhatKhongTrungLap(chuoiNhap);
+
+        console.log(`Chuỗi dài nhất không trùng lặp là: ${chuoiConDaiNhatKhongTrungLap}`);
+
+    </script>
+</body>
+
+</html>
