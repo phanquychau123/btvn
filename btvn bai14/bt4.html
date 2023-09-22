@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <input id="inputText" type="text" placeholder="nhap vao day">
+   <button id="saveButton">save</button>
+   <script>
+    arr=[];
+let inputText=document.getElementById("inputText");
+let saveButton=document.getElementById("saveButton");
+    saveButton.addEventListener("click",function(){
+        let inputValue=inputText.value;
+        arr.push(inputValue);
+        console.log(arr);
+    })
+
+   </script>
+</body>
+</html>
