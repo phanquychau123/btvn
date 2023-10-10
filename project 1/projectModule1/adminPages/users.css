@@ -1,0 +1,29 @@
+.main
+{
+    margin-top: 100px;
+}
+.footer{
+    width: 100%;
+}
+body {
+    background-color: #fff; }
+  
+  
+  .search-box {
+    width: 0px;
+    margin-right: 10px; }
+.logout{
+    margin-left: 80%;
+}
+.table2{
+    width: 100%;
+    height: auto;
+    border: 1px solid;
+}
+.img1{
+    width: 100px;
+    height: 100px;
+}
+.product__list{
+    margin-top: 200px;
+}
