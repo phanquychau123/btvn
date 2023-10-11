@@ -1,10 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.header{
+
+.header {
     position: fixed;
     width: 100%;
     height: 60px;
@@ -15,14 +16,16 @@
     z-index: 99;
     background: transparent;
 }
-.header .nav a{
+
+.header .nav a {
     text-decoration: none;
     color: #fff;
     font-size: 17px;
     margin-left: 20px;
     font-weight: 600;
 }
-.header .search input{
+
+.header .search input {
     background: transparent;
     font-size: 20px;
     border-radius: 5px;
@@ -32,47 +35,52 @@
     outline: none;
     color: #fff;
 }
-.header .search i{
+
+.header .search i {
     position: absolute;
     right: 110px;
     top: 22px;
     color: #fff;
 
 }
-.background{
-    
+
+.background {
+
     width: 100%;
     height: 100vh;
     background-image: url(../assets/./manuel-cosentino-n--CMLApjfI-unsplash.jpg);
     background-position: center;
     background-size: cover;
-    
+
 }
-.home{
+
+.home {
     position: absolute;
     top: 50%;
     left: 50%;
     width: 75%;
     height: 75%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     background-image: url(../assets/manuel-cosentino-n--CMLApjfI-unsplash.jpg
-    );
+);
     background-position: center;
     background-size: cover;
     display: flex;
     margin-top: 10px;
-    border:1px solid black;
+    border: 1px solid black;
     border-radius: 10px;
     border: none;
 
 }
-.content{
+
+.content {
     display: flex;
     flex-direction: column;
     width: 700px;
     padding: 100px 0;
 }
-.content a{
+
+.content a {
     position: relative;
     text-decoration: none;
     color: #fff;
@@ -81,48 +89,56 @@
     top: -40px;
     left: 80px;
 }
-.content h2{
+
+.content h2 {
     font-size: 3.5em;
     text-align: center;
     color: #fff;
 }
-.content h3{
+
+.content h3 {
     font-size: 2em;
     text-align: center;
-    color:#fff;
+    color: #fff;
 }
-.content pre{
+
+.content pre {
     margin-top: 20px;
     text-align: center;
     font-size: 1em;
     color: #fff;
 
 }
+
 .content icon {
     display: flex;
-    justify-content: center; 
-  
+    justify-content: center;
+
 }
-.login{
+
+.login {
     width: 450px;
     position: relative;
     padding: 100px 30px;
     backdrop-filter: blur(20px);
 }
-.login h2{
+
+.login h2 {
     font-size: 2em;
     text-align: center;
     margin-bottom: 20px;
     color: #fff;
 
 }
-.login input{
+
+.login input {
     position: relative;
     width: 100px;
     height: 30px;
     margin-bottom: 40px;
 }
-.login .input .input1{
+
+.login .input .input1 {
     font-size: 16px;
     display: flex;
     flex-direction: column;
@@ -137,35 +153,42 @@
     height: 100%;
 
 }
-::placeholder{
+
+::placeholder {
     color: #fff;
     font-size: 18px;
 }
-.login .input i{
+
+.login .input i {
     position: relative;
     right: -370px;
     bottom: 27px;
     color: #fff;
 }
-.check{
+
+.check {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
     color: #fff;
 
 }
-.check a{
+
+.check a {
     text-decoration: none;
     color: #fff;
 }
-.check a:hover{
+
+.check a:hover {
     text-decoration: underline;
 }
-.login .button{
+
+.login .button {
     width: 100%;
     height: 40px;
     margin-bottom: 15px;
 }
+
 button {
     width: 100%;
     height: 40px;
@@ -175,33 +198,36 @@ button {
     font-size: 20px;
     font-weight: 700;
     border-radius: 7px;
-    color:#fff;
+    color: #fff;
 }
-button:active{
+
+button:active {
     font-size: 25px;
 }
-.login .sign-up{
-display: flex;
-justify-content: center;
+
+.login .sign-up {
+    display: flex;
+    justify-content: center;
 }
-.login .sign-up a{
+
+.login .sign-up a {
     text-decoration: none;
     color: #fff;
     font-weight: 700;
 }
-.login .sign-up p{
+
+.login .sign-up p {
     color: #fff;
 }
 
-.sign-up a:hover{
+.sign-up a:hover {
     text-decoration: underline;
 }
-#errorMessenger{
+
+#errorMessenger {
     display: none;
     font-size: 20px;
     color: #fff;
 }
-@media screen and (max-width:1024px) {
-    
-   
-}
+
+@media screen and (max-width:1024px) {}

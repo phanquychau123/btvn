@@ -10,7 +10,7 @@ function register() {
     let confirmPassword = document.getElementById("confirmPassword").value;
 
    let obj={
-    email:email,
+    email:mail,
     name:name,
     password: password,
     id:uuid(),

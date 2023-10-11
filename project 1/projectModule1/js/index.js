@@ -62,10 +62,11 @@ function renderProduct(productList) {
         <img src="${productList[i].src}" alt="">
         <p>${productList[i].name}</p>
         <p>price :${VND.format(productList[i].price)}</p>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
-  Launch static backdrop modal
-</button>
-        <button class="button2" onclick="addToCart(${productList[i].id})">Mua Gói</button>
+        <!-- Button trigger modal -->
+        <button class="button2" onclick="addToCart(${productList[i].id})" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            mua gói
+          </button>
+        <button class="button2" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2" >chi tiết</button>
       </div>
         `
     }
@@ -167,7 +168,6 @@ function renderName() {
             <li><a href="./pages/register.html">Register</a></li>
           </div>
           `
-
     }
 }
 renderName()

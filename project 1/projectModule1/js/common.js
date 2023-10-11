@@ -22,8 +22,8 @@ function renderName() {
             }
         }
     } else {
-        document.getElementsByClassName('container__login')[0].innerHTML = 
-        `
+        document.getElementsByClassName('container__login')[0].innerHTML =
+            `
         <div class="container__login">
             <li><a href="./pages/login.html"><span class="material-symbols-outlined">
                   login

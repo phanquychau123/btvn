@@ -1,19 +1,17 @@
-function uuid() {
-    return Math.floor(Math.random()*734738483784);
-}
+
 function showUsers() {
     let users = JSON.parse(localStorage.getItem("users"))
     let text = "";
     for (let i = 0; i < users.length; i++) {
-        text += 
-        `
+        text +=
+            `
         <tr>
-            <td>${i+1}</td>
+            <td>${i + 1}</td>
             <td>${users[i].id}</td>
             <td>${users[i].name}</td>
             <td>${users[i].email}</td>
             <td>${users[i].role}</td>
-            <td><button onclick="blockUsers()">${users[i].action?"block":"unlock"}</button><button onclick="deleteUser(${users[i].id})">Xoa</button></td>
+            <td><button onclick="blockUsers()">${users[i].action ? "block" : "unlock"}</button><button onclick="deleteUser(${users[i].id})">Xoa</button></td>
         </tr>
         `
     }
@@ -21,14 +19,14 @@ function showUsers() {
 }
 showUsers()
 function deleteUser(index) {
-    let users =JSON.parse(localStorage.getItem("users"));
+    let users = JSON.parse(localStorage.getItem("users"));
     for (let i = 0; i < users.length; i++) {
-       if (users[i].id==index) {
-        users.splice(i,1)
-        localStorage.removeItem("userId")
-        localStorage.setItem("users",JSON.stringify(users))
-        showUsers()
-       }
+        if (users[i].id == index) {
+            users.splice(i, 1)
+            localStorage.removeItem("userId")
+            localStorage.setItem("users", JSON.stringify(users))
+            showUsers()
+        }
     }
 }
 function blockUsers() {
@@ -36,40 +34,58 @@ function blockUsers() {
     let users = JSON.parse(localStorage.getItem("users"));
     for (let i = 0; i < users.length; i++) {
         users[i].action = !users[i].action;
-        localStorage.setItem("users",JSON.stringify(users));
-        if (loggedUser==users[i].id) {
+        localStorage.setItem("users", JSON.stringify(users));
+        if (loggedUser == users[i].id) {
             localStorage.removeItem("userId")
         }
         showUsers()
     }
 }
-function addUser() {
-    let users = JSON.parse(localStorage.getItem("users")) || [];
-    let fullName = document.getElementById("fullName");
-    let typeEmail = document.getElementById("typeEmail");
-    let typePassword = document.getElementById("typePassword");
-    let role = document.getElementById("role");
+blockUsers()
+function uuid() {
+    return Math.floor(Math.random() * 734738483784);
+}
+let users = JSON.parse(localStorage.getItem("users")) || [];
+function register() {
+
+    let mail = document.getElementById("email").value;
+    let name = document.getElementById("name").value;
+    let password = document.getElementById("password").value;
+    let confirmPassword = document.getElementById("confirmPassword").value;
+    let admin = {
+        email: "quychau10a3@gmail.com",
+        password: "quychau123"
+    }
     let obj = {
-        email: typeEmail.value,
-        name: fullName.value,
-        password: typePassword.value,
+        email: mail,
+        name: name,
+        password: password,
         id: uuid(),
         cart: [],
-        role: role.value,
-        active: true,
+        role: `custumer`,
+        action: true
     }
     let check = users.filter((item) => {
-        return item.email == typeEmail.value;
+        return item.email == mail
     })
     if (check.length == 0) {
-        users.push(obj);
-        localStorage.setItem("users", JSON.stringify(users))
-        showUsers();
+        // tức là tài khoản chưa được đăng kí
+        // trước khi push phải kiểm tra xem password có trùng confirm hay không
+        if (confirmPassword != password) {
+            // alert("mật khẩu không khớp!")
+            document.getElementsByClassName("error")[0].style.display = "block";
+        } else {
+            document.getElementsByClassName("error")[0].style.display = "none";
+            users.push(obj);
+            localStorage.setItem("users", JSON.stringify(users));
+            //khi đăng kí thành công chuyển sang trang đăng nhập
+            window.location.href = "../pages/login.html"
+        }
     } else {
-        alert("tai khoan da ton tai")
+        alert("tài khoản đã tồn tại!")
     }
 }
-blockUsers()
+showUsers()
 let productList = [
     {
         name: "Ai Cập",
@@ -125,7 +141,7 @@ function renderProduct(productList) {
         text +=
             `
             <tr>
-            <td>${i+1}</td>
+            <td>${i + 1}</td>
             <td>${productList[i].name}</td>
             <td><img src="${productList[i].src}" class="img1"</td>
             <td>${productList[i].price}</td>
@@ -147,20 +163,20 @@ function addProduct() {
     const selectedFile = document.getElementById("src").files[0].name;
     console.log(selectedFile);
     let product =
-        {
-            name: productName.value,
-            price: price.value,
-            id: uuid(),
-            src: "../assets/images/"+ selectedFile,
-        };
-        let check = products.filter((item) => {
-            return item.name == productName.value;
-        })
-        if (check.length == 0) {
-            products.push(product);
-            localStorage.setItem("productList", JSON.stringify(products))
-            showProduct();
-        } else {
-            alert("san pham da co trong danh sach")
-        }
+    {
+        name: productName.value,
+        price: price.value,
+        id: uuid(),
+        src: "../assets/images/" + selectedFile,
+    };
+    let check = products.filter((item) => {
+        return item.name == productName.value;
+    })
+    if (check.length == 0) {
+        products.push(product);
+        localStorage.setItem("productList", JSON.stringify(products))
+        showProduct();
+    } else {
+        alert("san pham da co trong danh sach")
+    }
 }

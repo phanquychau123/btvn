@@ -1,158 +1,186 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container{
-   max-width: 100% !important;
-   justify-content: center;
-   padding: 0 !important;
+.container {
+    max-width: 100% !important;
+    justify-content: center;
+    padding: 0 !important;
 }
-header{
+
+header {
     max-width: 100%;
-    background-image:url(https://c4.wallpaperflare.com/wallpaper/347/474/382/5bd34a585a74f-wallpaper-preview.jpg);
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/347/474/382/5bd34a585a74f-wallpaper-preview.jpg);
     background-size: cover;
     height: 700px;
     position: relative;
 }
-header .count{
-display:inline-block;
-width: 20px;
-height: 20px;
-border: 1px solid black;
-border-radius: 50%;
-line-height: 20px;
-text-align: center;
+
+header .count {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    line-height: 20px;
+    text-align: center;
 }
-.loginName ul{
+
+.loginName ul {
     list-style: none;
 }
-.container__all{
+
+.container__all {
     opacity: 1;
 }
-.container__title h2{
-    color:#ffffff;
+
+.container__title h2 {
+    color: #ffffff;
     font-style: italic;
 }
-.container__bar li a{
-    color:black;
+
+.container__bar li a {
+    color: black;
 }
-.container__login{
-display: flex;
-position: relative;
-margin-left: 70%;
+
+.container__login {
+    display: flex;
+    position: relative;
+    margin-left: 70%;
 }
-.container__login li a{
+
+.container__login li a {
     color: black !important;
 }
-.bag{
+
+.bag {
     position: relative;
     margin-top: 10px;
 }
 
-.container__header{
+.container__header {
     position: relative;
     text-align: center;
     margin-top: 200px;
     color: #ffffff;
 }
-.container__header--search h4{
+
+.container__header--search h4 {
     font-size: 60px;
 }
-.container__header--search input{
+
+.container__header--search input {
     width: 300px;
     height: 40px;
     border-radius: 10px;
 }
-#search{
+
+#search {
     position: absolute;
     font-size: 40px;
     margin-top: 3px;
 }
+
 .container__slice {
     width: 100%;
     height: 200px;
 }
-.container__slice img{
-    width:100%;
+
+.container__slice img {
+    width: 100%;
     height: 200px;
     object-fit: fill;
 }
-.button1{
+
+.button1 {
     border-radius: 7px;
-    background-color:aliceblue;
-}
-.button2{
-    border-radius: 7px;
-    background-color:aliceblue;
+    background-color: aliceblue;
 }
 
-.container__product{
+.button2 {
+    text-align: center;
+    width: 70px;
+    height: 30px;
+    border-radius: 7px;
+    background-color: aliceblue;
+}
+
+.container__product {
     justify-content: center;
     width: 100%;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
-   gap: 50px;
-}
-.container__shop__title{
-    color:black;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px; 
-}
-.container__shop__title h4{
-    font-size: 40px;
-}
-.container__product--item{
-    text-align: center;
-   width: 47%;
-   height: 600px;
-   background-color: aliceblue;
-   border-radius: 10px;
+    gap: 50px;
 }
 
-.container__product--item img{
+.container__shop__title {
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container__shop__title h4 {
+    font-size: 40px;
+}
+
+.container__product--item {
+    text-align: center;
+    width: 47%;
+    height: 600px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.container__product--item img {
     width: 90%;
     margin-top: 20px;
     height: 450px;
     border-radius: 10px;
 }
-h3{
+
+h3 {
     text-align: center;
-   padding-top: 50px;
-   font-size: 40px;
-   font-style: italic;
+    padding-top: 50px;
+    font-size: 40px;
+    font-style: italic;
 }
-.container__info{
+
+.container__info {
     margin-top: 70px;
     width: 100%;
     height: 600px;
     display: flex;
     gap: 50px
-
 }
-.container__info--item1{
+
+.container__info--item1 {
     width: 50%;
     padding-left: 20px;
 }
-.container__info--item2{
+
+.container__info--item2 {
     width: 50%;
 }
-.container__info--item2 img{
-width: 95% !important;
-height: 500px;
-object-fit: cover;
-border-radius: 30px;
+
+.container__info--item2 img {
+    width: 95% !important;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 30px;
 }
-.button3{
+
+.button3 {
     border-radius: 7px;
     background-color: aliceblue;
     margin-top: 50px;
     width: 200px;
     height: 50px;
 }
-.footer{
+
+.footer {
     width: 100% !important;
 }

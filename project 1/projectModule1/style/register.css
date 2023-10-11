@@ -1,16 +1,18 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.container{
-   max-width: 100%;
+
+.container {
+    max-width: 100%;
     height: 900px;
     background-image: url(../assets/manuel-cosentino-n--CMLApjfI-unsplash.jpg);
     background-size: cover;
-  position: relative;
+    position: relative;
 }
-.container__main{
+
+.container__main {
     background-image: url(../assets/manuel-cosentino-n--CMLApjfI-unsplash.jpg);
     background-size: cover;
     width: 800px;
@@ -20,17 +22,21 @@
     margin-top: 80px;
     border-radius: 10px;
 }
-.container__main li a{
-    color:aliceblue;
+
+.container__main li a {
+    color: aliceblue;
     text-decoration: none;
 }
-h4{
+
+h4 {
     color: aliceblue;
 }
-.container__main label{
+
+.container__main label {
     color: aliceblue;
 }
-header{
+
+header {
     width: 100%;
     height: 60px;
     padding: 0 40px;
@@ -38,21 +44,24 @@ header{
     border: 1px solid #000000;
     border-radius: 10px;
 }
-.menu{
+
+.menu {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 50px;
 }
-li{
+
+li {
     display: flex;
     align-items: center;
     height: 100%;
     list-style: none;
     position: relative;
 }
-.dropdown{
+
+.dropdown {
     min-width: 120px;
     padding: 15px 10px;
     box-sizing: border-box;
@@ -68,50 +77,58 @@ li{
     visibility: hidden;
     transition: 0.5s ease-in-out;
 }
-li:hover.dropdown{
+
+li:hover.dropdown {
     opacity: 1;
     visibility: visible;
     top: 60px;
 }
-.dropdown a{
+
+.dropdown a {
     font-size: 14px;
     border-bottom: 1px solid #000000;
     padding-bottom: 10px;
 }
-.main{
+
+.main {
     display: flex;
     margin-top: 50px;
 
 }
-.main__body{
+
+.main__body {
     width: 50%;
     font-size: 40px;
     margin-left: 20px;
 }
-.register{
+
+.register {
     width: 50%;
 }
-.error{
+
+.error {
     display: none;
     color: red;
 }
-input{
+
+input {
     width: 200px;
     height: 30px;
     border-radius: 10px;
 }
-.button{
-margin-top: 20px;
-background-color: red;
-width: 70px;
-height: 20px;
-color: aliceblue;
-}
-.button1{
+
+.button {
+    margin-top: 20px;
     background-color: red;
     width: 70px;
     height: 20px;
-    color:aliceblue;
-    margin-left: 20px;
+    color: aliceblue;
 }
 
+.button1 {
+    background-color: red;
+    width: 70px;
+    height: 20px;
+    color: aliceblue;
+    margin-left: 20px;
+}
